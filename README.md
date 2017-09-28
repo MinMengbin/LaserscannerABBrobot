@@ -25,10 +25,21 @@ https://youtu.be/DwD2qFIzZu8
 Usage:
 Operating the following steps on Linux:
 - roscore  (If roscore doesnot run now, please open a new terminal, please run this command) 
+
 - sudo chmod a+rw /dev/ttyACM0  (Open a new terminal, more details available at https://github.com/ros-gbp/urg_node-release) 
     (Note for me:  /home/laserset.txt  run . laserset)
+    
 - rosrun urg_node urg_node  (more details available at https://github.com/ros-gbp/urg_node-release) 
     (Note for me:  /home/urgnode.txt  run . urgnode)
-- rosrun test2 LaserScanTester
+    
+- rosrun test2 LaserScanTester (Open a new terminal)
     (Note for me:  /home/laserposition.txt  run . laserposition)
-- rosrun 
+Now you can see the pulished positions like 
+[ INFO] [1506564447.027778672]: 0.483479 0.450743
+
+    
+- rosrun rviz rviz (Open a new terminal)
+- Add a LaserScan on rviz by clicking Add on the bottom of the left Displays panel (more details available at https://github.com/ros-gbp/urg_node-release)
+- Change the Topic (Under LaserScan) to /scan (more details available at https://github.com/ros-gbp/urg_node-release)
+- Change the Fixed Frame (Under Global Options) to /laser (more details available at https://github.com/ros-gbp/urg_node-release)
+Now, the dots are shown on the rviz window .
