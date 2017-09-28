@@ -56,4 +56,8 @@ Now you can see the pulished positions like
 Now, the dots are shown on the rviz window https://www.youtube.com/watch?v=iAATysYQh3g&t=3s&list=PLTK_5YZhA5tG_WGu19Jo2jqEyzdOrrMiM&index=2.
 
 For simulation: 
-- rosrun 
+- roslaunch abbaspa abbga.launch has_velocity_limits:=false
+(Note for me:  /home/abbaspasimu.txt  run  . abbaspasimu)
+- rosrun abb2ros motion_planning_aspa
+(Note for me:  /home/commandexecute.txt  run  . commandexecute)
+
