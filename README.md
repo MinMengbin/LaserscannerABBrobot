@@ -36,10 +36,17 @@ Operating the following steps on Linux:
 - rosrun urg_node urg_node  (more details available at https://github.com/ros-gbp/urg_node-release) 
     (Note for me:  /home/urgnode.txt  run . urgnode)
     
-- rosrun test2 LaserScanTester (Open a new terminal)
+-  rosrun test2 laser_aspa_pos (Open a new terminal)
     (Note for me:  /home/laserposition.txt  run . laserposition)
-Now you can see the pulished positions like 
-[ INFO] [1506564447.027778672]: 0.483479 0.450743
+Now you can see the pulished positions like
+[ INFO] [1506576087.330292101]: the number of points is 375
+[ INFO] [1506576087.330360426]: First point: [-2.200428 -0.756997]
+[ INFO] [1506576087.430859164]: the number of points is 378
+[ INFO] [1506576087.430929933]: First point: [-2.169223 -0.746262]
+[ INFO] [1506576087.531532844]: the number of points is 379
+[ INFO] [1506576087.531611148]: First point: [-2.180571 -0.750166]
+[ INFO] [1506576087.631865229]: the number of points is 381
+[ INFO] [1506576087.631932325]: First point: [-2.182462 -0.750816]
 
     
 - rosrun rviz rviz (Open a new terminal)
@@ -47,3 +54,6 @@ Now you can see the pulished positions like
 - Change the Topic (Under LaserScan) to /scan (more details available at https://github.com/ros-gbp/urg_node-release)
 - Change the Fixed Frame (Under Global Options) to /laser (more details available at https://github.com/ros-gbp/urg_node-release)
 Now, the dots are shown on the rviz window https://www.youtube.com/watch?v=iAATysYQh3g&t=3s&list=PLTK_5YZhA5tG_WGu19Jo2jqEyzdOrrMiM&index=2.
+
+For simulation: 
+- rosrun 
