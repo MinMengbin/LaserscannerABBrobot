@@ -47,5 +47,3 @@ Now you can see the pulished positions like
 - Change the Topic (Under LaserScan) to /scan (more details available at https://github.com/ros-gbp/urg_node-release)
 - Change the Fixed Frame (Under Global Options) to /laser (more details available at https://github.com/ros-gbp/urg_node-release)
 Now, the dots are shown on the rviz window https://www.youtube.com/watch?v=iAATysYQh3g&t=3s&list=PLTK_5YZhA5tG_WGu19Jo2jqEyzdOrrMiM&index=2.
-
-
