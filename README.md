@@ -8,8 +8,11 @@ Generally speaking, this project aims at the following functions as initial plan
 - MoveIt module subscribes the calibrated possitions, sends commands to the robot controller which drives the end-effectors to the top of the obeject
 
 Author: Mengbin (Mike) Min 
+
 Email: prlatlab@gmail.com;robotintheworld@163.com
+
 http://prllab.wixsite.com/prl-lab-en
+
 Copyrights Reserved
 
 Your comments and suggestions are highly appreciated! Thanks for your time.
@@ -23,6 +26,7 @@ Hardware Setup (Make sure that they are all connected correctly)
 https://youtu.be/DwD2qFIzZu8
 
 Usage:
+
 Operating the following steps on Linux:
 - roscore  (If roscore doesnot run now, please open a new terminal, please run this command) 
 
@@ -43,3 +47,5 @@ Now you can see the pulished positions like
 - Change the Topic (Under LaserScan) to /scan (more details available at https://github.com/ros-gbp/urg_node-release)
 - Change the Fixed Frame (Under Global Options) to /laser (more details available at https://github.com/ros-gbp/urg_node-release)
 Now, the dots are shown on the rviz window .
+
+
