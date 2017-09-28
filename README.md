@@ -39,6 +39,7 @@ Operating the following steps on Linux:
 -  rosrun test2 laser_aspa_pos (Open a new terminal)
     (Note for me:  /home/laserposition.txt  run . laserposition)
 Now you can see the pulished positions like
+
 [ INFO] [1506576087.330292101]: the number of points is 375
 [ INFO] [1506576087.330360426]: First point: [-2.200428 -0.756997]
 [ INFO] [1506576087.430859164]: the number of points is 378
@@ -61,3 +62,4 @@ For simulation:
 - rosrun abb2ros motion_planning_aspa
 (Note for me:  /home/commandexecute.txt  run  . commandexecute)
 
+Now, the robot arm starts moving to the target object in the rviz virtural environment. If you move the object, the arm will move to a new position relatively based on the laser scanner feedback.
