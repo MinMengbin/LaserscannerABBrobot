@@ -41,12 +41,19 @@ Operating the following steps on Linux:
 Now you can see the pulished positions like
 
 [ INFO] [1506576087.330292101]: the number of points is 375
+
 [ INFO] [1506576087.330360426]: First point: [-2.200428 -0.756997]
+
 [ INFO] [1506576087.430859164]: the number of points is 378
+
 [ INFO] [1506576087.430929933]: First point: [-2.169223 -0.746262]
+
 [ INFO] [1506576087.531532844]: the number of points is 379
+
 [ INFO] [1506576087.531611148]: First point: [-2.180571 -0.750166]
+
 [ INFO] [1506576087.631865229]: the number of points is 381
+
 [ INFO] [1506576087.631932325]: First point: [-2.182462 -0.750816]
 
     
