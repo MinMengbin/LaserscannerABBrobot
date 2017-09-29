@@ -36,6 +36,21 @@ Operating the following steps on Linux:
 - rosrun urg_node urg_node  (more details available at https://github.com/ros-gbp/urg_node-release) 
     (Note for me:  /home/urgnode.txt  run . urgnode)
     
+- rosrun rviz rviz (Open a new terminal)
+- Add a LaserScan on rviz by clicking Add on the bottom of the left Displays panel (more details available at https://github.com/ros-gbp/urg_node-release)
+- Change the Topic (Under LaserScan) to /scan (more details available at https://github.com/ros-gbp/urg_node-release)
+- Change the Fixed Frame (Under Global Options) to /laser (more details available at https://github.com/ros-gbp/urg_node-release)
+Now, the dots are shown on the rviz window https://www.youtube.com/watch?v=iAATysYQh3g&t=3s&list=PLTK_5YZhA5tG_WGu19Jo2jqEyzdOrrMiM&index=2.
+
+For Simulation:
+- rosrun test2 laserscantester
+- roslaunch abbaspa abbga.launch has_velocity_limits:=false
+    (Note for me:  /home/abbaspasimu.txt  run  . abbaspasimu)
+- rosrun abb2ros motion_planning_aspa
+    (Note for me:  /home/commandexecute.txt  run  . commandexecute)
+
+
+For Real Robot: 
 -  rosrun test2 laser_aspa_pos (Open a new terminal)
     (Note for me:  /home/laserposition.txt  run . laserposition)
 Now you can see the pulished positions like
@@ -57,13 +72,9 @@ Now you can see the pulished positions like
 [ INFO] [1506576087.631932325]: First point: [-2.182462 -0.750816]
 
     
-- rosrun rviz rviz (Open a new terminal)
-- Add a LaserScan on rviz by clicking Add on the bottom of the left Displays panel (more details available at https://github.com/ros-gbp/urg_node-release)
-- Change the Topic (Under LaserScan) to /scan (more details available at https://github.com/ros-gbp/urg_node-release)
-- Change the Fixed Frame (Under Global Options) to /laser (more details available at https://github.com/ros-gbp/urg_node-release)
-Now, the dots are shown on the rviz window https://www.youtube.com/watch?v=iAATysYQh3g&t=3s&list=PLTK_5YZhA5tG_WGu19Jo2jqEyzdOrrMiM&index=2.
 
-For simulation: 
+
+
 - roslaunch abbaspa abbga.launch has_velocity_limits:=false
 (Note for me:  /home/abbaspasimu.txt  run  . abbaspasimu)
 - rosrun abb2ros motion_planning_aspa
