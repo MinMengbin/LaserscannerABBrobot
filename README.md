@@ -48,11 +48,20 @@ For Simulation:
     (Note for me:  /home/abbaspasimu.txt  run  . abbaspasimu)
 - rosrun abb2ros motion_planning_aspa
     (Note for me:  /home/commandexecute.txt  run  . commandexecute)
+You can move the object, and you can see the results as shown by the this video
+https://youtu.be/ObHPCBsrXIE (A 3D_Printed Asparagus)
 
+For Real Robot (2 ways): 
 
-For Real Robot: 
--  rosrun test2 laser_aspa_pos (Open a new terminal)
+One way of using MoveIt.
+
+Another way of using internet communication without using MoveIt module
+- rosrun test2 laser_aspa_pos (Open a new terminal)
     (Note for me:  /home/laserposition.txt  run . laserposition)
+- Change ABB IRB120 to Auto Mode 
+- Run the Program called Server from T_ROB1
+- rosrun abb2ros abb_ah
+
 Now you can see the pulished positions like
 
 [ INFO] [1506576087.330292101]: the number of points is 375
@@ -72,12 +81,5 @@ Now you can see the pulished positions like
 [ INFO] [1506576087.631932325]: First point: [-2.182462 -0.750816]
 
     
-
-
-
-- roslaunch abbaspa abbga.launch has_velocity_limits:=false
-(Note for me:  /home/abbaspasimu.txt  run  . abbaspasimu)
-- rosrun abb2ros motion_planning_aspa
-(Note for me:  /home/commandexecute.txt  run  . commandexecute)
 
 Now, the robot arm starts moving to the target object in the rviz virtural environment. If you move the object, the arm will move to a new position relatively based on the laser scanner feedback.
