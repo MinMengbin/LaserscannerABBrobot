@@ -54,14 +54,13 @@ https://youtu.be/ObHPCBsrXIE (A 3D_Printed Asparagus)
 For Real Robot (2 ways): 
 
 One way of using MoveIt.
+(_______)
+
+Now, the robot arm starts moving to the target object in the rviz virtural environment. If you move the object, the arm will move to a new position relatively based on the laser scanner feedback.
 
 Another way of using internet communication without using MoveIt module
 - rosrun test2 laser_aspa_pos (Open a new terminal)
     (Note for me:  /home/laserposition.txt  run . laserposition)
-- Change ABB IRB120 to Auto Mode 
-- Run the Program called Server from T_ROB1
-- rosrun abb2ros abb_ah
-
 Now you can see the pulished positions like
 
 [ INFO] [1506576087.330292101]: the number of points is 375
@@ -79,7 +78,14 @@ Now you can see the pulished positions like
 [ INFO] [1506576087.631865229]: the number of points is 381
 
 [ INFO] [1506576087.631932325]: First point: [-2.182462 -0.750816]
-
     
+- Change ABB IRB120 to Auto Mode 
+- Run the Program called Server from T_ROB1
+- rosrun abb2ros abb_ah
+ 
+Now, the robot arm starts moving to the target object. If you move the object (it is a 3D printed asparagus for this case), the arm will move to a new position relatively based on the laser scanner feedback. Also, you can start robotstudio on Windows and monitor the robot movement online.  
+https://www.youtube.com/watch?v=7wkOMaIlb2Y
 
-Now, the robot arm starts moving to the target object in the rviz virtural environment. If you move the object, the arm will move to a new position relatively based on the laser scanner feedback.
+Your comments and suggestions are highly appreciated! Thanks for your time.
+
+Mengbin (Mike) Min  30/09/2017
