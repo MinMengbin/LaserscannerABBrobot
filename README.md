@@ -9,7 +9,7 @@ Generally speaking, this project aims at the following functions as initial plan
 
 Author: Mengbin (Mike) Min 
 
-Email: prlatlab@gmail.com;robotintheworld@163.com
+Email: prlatlab@gmail.com; robotintheworld@163.com
 
 http://prllab.wixsite.com/prl-lab-en
 
