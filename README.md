@@ -82,8 +82,11 @@ Now you can see the pulished positions like
 - Change ABB IRB120 to Auto Mode 
 - Run the Program called Server from T_ROB1
 - rosrun abb2ros abb_ah
- 
-Now, the robot arm starts moving to the target object. If you move the object (it is a 3D printed asparagus for this case), the arm will move to a new position relatively based on the laser scanner feedback. Also, you can start robotstudio on Windows and monitor the robot movement online.  
+
+First the internet communication between ROS and IRC5 controller is connected.
+https://www.youtube.com/watch?v=KQ2W-rRu9kg
+
+Then the robot arm starts moving to the target object. If you move the object (it is a 3D printed asparagus for this case), the arm will move to a new position relatively based on the laser scanner feedback. Also, you can start robotstudio on Windows and monitor the robot movement online.  
 https://www.youtube.com/watch?v=7wkOMaIlb2Y
 
 Your comments and suggestions are highly appreciated! Thanks for your time.
