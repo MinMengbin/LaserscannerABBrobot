@@ -48,6 +48,15 @@ For Simulation:
     (Note for me:  /home/abbaspasimu.txt  run  . abbaspasimu)
 - rosrun abb2ros motion_planning_aspa
     (Note for me:  /home/commandexecute.txt  run  . commandexecute)
+    
+    Error:  error while loading shared libraries: libmoveit_move_group_interface.so.0.9.9: cannot open shared object file: No such file or directory
+    refer to: 
+    https://github.com/ros-planning/moveit_tutorials/issues/67
+    solved by commands:  
+    sudo apt-get update
+    sudo apt-get upgrade
+        
+
 You can move the object, and you can see the results as shown by the this video
 https://youtu.be/ObHPCBsrXIE (A 3D_Printed Asparagus)
 
