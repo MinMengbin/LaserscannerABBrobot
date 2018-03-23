@@ -52,7 +52,7 @@ For Simulation:
   add -> rviz-> robot model
   rosrun abb2ros motion_planning_aspa (which is the next step, you can run first though)
   displays -> Global Options -> Fixed Frame ->base (for my case)
-  displays -> RobotModel ( tick the)
+  displays -> RobotModel ( tick this or untick and tick again just for updating)
  
 - rosrun abb2ros motion_planning_aspa
     (Note for me:  /home/commandexecute.txt  run  . commandexecute)
