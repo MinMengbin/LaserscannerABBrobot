@@ -46,13 +46,21 @@ For Simulation:
 - rosrun test2 laserscantester
 - roslaunch abbaspa abbga.launch has_velocity_limits:=false
     (Note for me:  /home/abbaspasimu.txt  run  . abbaspasimu)
+  rviz -1 exit code -11 progress has died  (my guess I update my rviz to newest version(mine is 1.12.15), so rviz could not run properly as before)
+  solution:  solved by 
+  rosrun rviz rviz 
+  add -> rviz-> robot model
+  rosrun abb2ros motion_planning_aspa (which is the next step, you can run first though)
+  displays -> Global Options -> Fixed Frame ->base (for my case)
+  displays -> RobotModel ( tick the)
+ 
 - rosrun abb2ros motion_planning_aspa
     (Note for me:  /home/commandexecute.txt  run  . commandexecute)
-    
-    Error:  error while loading shared libraries: libmoveit_move_group_interface.so.0.9.9: cannot open shared object file: No such file or directory
+
+Error:  error while loading shared libraries: libmoveit_move_group_interface.so.0.9.9: cannot open shared object file: No such file or directory
     refer to: 
     https://github.com/ros-planning/moveit_tutorials/issues/67
-    solved by commands:  
+solution:    solved by commands:  
     sudo apt-get update
     sudo apt-get upgrade
         
