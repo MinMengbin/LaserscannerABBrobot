@@ -1,0 +1,1 @@
+roslaunch abbaspa moveit_planning_execution.launch robot_ip:=130.217.40.225 has_velocity_limits:=true
